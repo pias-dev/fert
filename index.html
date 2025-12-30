@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="All Tool AI" />
+  <link rel="canonical" href="https://www.fertilizer-calculator.alltoolai.online" />
+
+  <!-- SEO TITLE & DESCRIPTION -->
+  <title>Fertilizer Calculator & Blend Tool | Free, Fast, Private NPK Rates</title>
+  <meta name="description" content="Top-rated, lifetime free Fertilizer Calculator for NPK rates, custom blends, and liquid mixes. Calculate kg/ha, lbs/acre, and DIY DEF lawn mixes. Private, secure, and unlimited.">
+  <meta name="keywords" content="fertilizer calculator, fertiliser calculator, NPK calculator, fertilizer blend calculator, liquid fertilizer calculator, spring fertility calculator, calculate fertilizer rates, blending fertilizer calculations, calculating fertilizer blends, yard fertilizer calculator, how to mix def for lawn fertilizer calculator, how much def per gallon of water for fertilizer calculator, urea, dap, mop, días fértiles calculadora, periodo fertil calculadora, calculadora de dias fertiles, calculadora de fertilidad, calcular dias fertiles, calcular periodo fertil, fertility calculator clear blue, spring fertility egg calculator, total fertility rate, agriculture, farming, gardening, USA, UK, India, Australia">
+  <meta name="robots" content="index, follow, max-snippet, max-image-preview" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fertilizer Calculator & Blend Tool | Free, Fast, Private">
+  <meta property="og:description" content="The best free tool to calculate fertilizer rates, custom blends, and DIY lawn solutions. Secure and private browser-based processing.">
+  <meta property="og:url" content="https://www.fertilizer-calculator.alltoolai.online">
+  <meta property="og:site_name" content="AllToolAI">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fertilizer Calculator & Blend Tool | Free, Fast, Private">
+  <meta name="twitter:description" content="Calculate NPK rates, blends, and costs instantly. Lifetime free and 100% private.">
+
+  <!-- GEO/Hreflang -->
+  <link rel="alternate" hreflang="x-default" href="https://www.fertilizer-calculator.alltoolai.online" />
+  <link rel="alternate" hreflang="en" href="https://www.fertilizer-calculator.alltoolai.online" />
+  <link rel="alternate" hreflang="es" href="https://www.fertilizer-calculator.alltoolai.online" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="/assets/icon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/icon/favicon.svg" sizes="any" />
+  <link rel="shortcut icon" href="/assets/icon/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="All Tool Ai" />
+  <link rel="manifest" href="/assets/icon/site.webmanifest" />
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Non-blocking load for Google Fonts stylesheet -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    
+  <!-- Non-blocking load for your Tailwind build -->
+  <link rel="preload" href="/assets/style/style.css" as="style" />
+  <link rel="stylesheet" href="/assets/style/style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="/assets/style/style.css" />
+
+  <!-- Pre-connect for JS -->
+  <script src="/assets/js/header.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+</head>
+<body class="bg-slate-200 font-sans text-slate-800 flex min-h-screen flex-col transition-colors duration-300 dark:bg-slate-900 dark:text-slate-200">
+
+<div id="header-placeholder"></div>
+
+<main class="flex-grow w-full">
+    <div class="p-4 sm:p-6 mt-16 mx-auto">
+        <div class="mb-4">
+          <div id="topad-1" aria-label="Top Ad 1"></div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-[side_bar] lg:gap-4">
+
+            <!-- MAIN CALCULATOR SECTION -->
+            <div class="min-w-0 overflow-hidden">
+            <section class="bg-white p-4 sm:p-6 lg:p-8 rounded-2xl shadow-xl border border-slate-300 dark:bg-slate-800 dark:border-slate-700">
+                <div class="text-center mb-8">
+                    <h1 class="p-1 text-3xl lg:text-4xl font-extrabold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                      Fertilizer Blend & Rate Calculator
+                    </h1>
+                    <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">
+                      The best free tool to calculate fertilizer rates, blends, and costs. Fast, private, and secure.
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    <!-- 1. Field Inputs -->
+                    <fieldset class="border-t-4 border-indigo-500 pt-4 rounded p-4">
+                        <legend class="px-2 text-2xl font-bold text-indigo-600 dark:text-indigo-400">1. Field & Crop Setup</legend>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="form-group">
+                                <label for="crop-type" class="block text-lg font-semibold text-slate-900 dark:text-white">Target Crop</label>
+                                <select id="crop-type" class="mt-1 block w-full rounded-md border-indigo-300 py-3 px-3 bg-slate-200 text-slate-900 border dark:bg-slate-700 dark:text-white"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="soil-type" class="block text-lg font-semibold text-slate-900 dark:text-white">Soil Texture</label>
+                                <select id="soil-type" class="mt-1 block w-full rounded-md border-indigo-300 py-3 px-3 bg-slate-200 text-slate-900 border dark:bg-slate-700 dark:text-white">
+                                    <option value="loamy" selected>Loamy (Standard)</option>
+                                    <option value="sandy">Sandy (Increases N & K needs)</option>
+                                    <option value="clay">Clay (Increases P needs)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                            <div class="form-group">
+                                <label for="field-size" class="block text-lg font-semibold text-slate-900 dark:text-white">Field Size</label>
+                                <div class="mt-1 flex rounded-md shadow-sm">
+                                    <input type="number" id="field-size" value="1" min="0.01" step="0.1" class="block w-full border-indigo-300 border py-3 px-3 bg-slate-100 dark:bg-slate-700 dark:text-white">
+                                    <select id="unit-switcher" class="border bg-slate-300 py-3 px-3 dark:bg-slate-600 dark:text-white">
+                                        <option value="hectare">Hectares (ha)</option>
+                                        <option value="acre">Acres (ac)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group bg-slate-200 p-3 rounded border border-indigo-300 dark:bg-slate-700">
+                                <label for="nutrient-basis" class="block text-base font-bold text-slate-900 dark:text-white">Nutrient Input Format
+                                    <span class="text-xs font-normal text-slate-600 dark:text-slate-300 block">Elemental (Soil Test) or Oxide (Fert Label)?</span>
+                                </label>
+                                <select id="nutrient-basis" class="mt-1 block w-full rounded-md border-indigo-300 py-2 px-3 bg-white text-slate-900 dark:bg-slate-800 dark:text-white">
+                                    <option value="oxide" selected>Oxide Basis (N - P₂O₅ - K₂O)</option>
+                                    <option value="elemental">Elemental Basis (N - P - K)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- 2. Targets -->
+                    <fieldset class="border-t-4 border-indigo-500 pt-4 rounded p-4">
+                        <legend class="px-2 text-2xl font-bold text-indigo-600 dark:text-indigo-400">2. Nutrient Requirements (kg/ha)</legend>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                            <div class="form-group">
+                                <label for="nitrogen" class="block text-base font-semibold text-slate-900 dark:text-white">Nitrogen Target</label>
+                                <input type="number" id="nitrogen" value="120" min="0" class="mt-1 block w-full rounded-md border border-indigo-300 py-3 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-white">
+                            </div>
+                            <div class="form-group">
+                                <label id="label-p" for="phosphorus" class="block text-sm font-medium text-slate-900 dark:text-white">Phosphorus Target</label>
+                                <input type="number" id="phosphorus" value="60" min="0" class="mt-1 block w-full rounded-md border border-indigo-300 py-3 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-white">
+                            </div>
+                            <div class="form-group">
+                                <label id="label-k" for="potassium" class="block text-sm font-medium text-slate-900 dark:text-white">Potassium Target</label>
+                                <input type="number" id="potassium" value="60" min="0" class="mt-1 block w-full rounded-md border border-indigo-300 py-3 px-3 bg-slate-200 text-slate-900 dark:bg-slate-700 dark:text-white">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- 3. Advanced (Split / Custom) -->
+                    <fieldset class="border-t-4 border-indigo-500 pt-4 rounded p-4">
+                        <legend class="px-2 text-2xl font-bold text-indigo-600 dark:text-indigo-400">3. Advanced Blending & Costs</legend>
+                        
+                        <!-- Split App -->
+                        <div class="flex items-center gap-4 mb-4">
+                            <input type="checkbox" id="split-app-enable" class="h-6 w-6 rounded text-indigo-600">
+                            <label for="split-app-enable" class="text-lg font-semibold text-slate-900 dark:text-white">Split Application (Top-Dressing)</label>
+                        </div>
+                        <div id="split-app-inputs" class="mb-6 pl-9 hidden">
+                             <label class="block text-base mb-1 dark:text-white">Percentage of Nitrogen applied in 2nd Dose:</label>
+                             <div class="flex items-center gap-2">
+                                <input type="number" id="split-app-percentage" value="50" max="90" min="10" class="w-24 rounded border border-indigo-300 py-1.5 px-2 bg-slate-200 dark:bg-slate-900 dark:text-white">
+                                <span class="text-slate-900 dark:text-white">%</span>
+                             </div>
+                        </div>
+
+                        <!-- Custom Blend -->
+                        <div class="flex items-center gap-4 mb-4">
+                            <input type="checkbox" id="custom-blend-enable" class="h-6 w-6 rounded text-indigo-600">
+                            <label for="custom-blend-enable" class="text-lg font-semibold text-slate-900 dark:text-white">Use Custom Fertilizer Blend</label>
+                        </div>
+                        <div id="custom-blend-inputs" class="mb-6 p-4 rounded hidden">
+                            <p class="text-sm text-slate-600 dark:text-slate-400 mb-2">Define your custom NPK blend (e.g., for liquid fertilizer or specific sacks).</p>
+                            <div class="grid grid-cols-4 gap-4 mb-4">
+                                <div><label class="block text-lg font-bold">N %</label><input type="number" id="custom-n" value="15" class="w-full rounded bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-white border border-indigo-300 py-1 px-2"></div>
+                                <div><label class="block text-lg font-bold">P₂O₅ %</label><input type="number" id="custom-p" value="15" class="w-full rounded bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-white border border-indigo-300 py-1 px-2"></div>
+                                <div><label class="block text-lg font-bold">K₂O %</label><input type="number" id="custom-k" value="15" class="w-full rounded bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-white border border-indigo-300 py-1 px-2"></div>
+                                <div><label class="block text-lg font-bold">Cost/kg</label><input type="number" id="custom-price" value="0.80" class="w-full rounded bg-slate-200 dark:bg-slate-700 text-slate-900 dark:text-white border border-indigo-300 py-1 px-2"></div>
+                            </div>
+                            <label class="block text-lg font-semibold mb-1">Strategy:</label>
+                            <select id="blend-strategy" class="w-full rounded border border-indigo-300 py-2 px-2 bg-slate-200 dark:bg-slate-900">
+                                <option value="p-based">Match Phosphorus Needs First</option>
+                                <option value="k-based">Match Potassium Needs First</option>
+                            </select>
+                        </div>
+
+                        <!-- Prices -->
+                        <div class="mt-4 pt-4 border-t border-indigo-300 text-slate-900 dark:text-white">
+                            <p class="mb-2 font-bold text-lg">Market Prices (Per kg or L)</p>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                <div><label class="block text-base">Urea</label><input type="number" id="urea-price" value="0.70" class="w-full border border-indigo-300 py-1 px-2 dark:bg-slate-900 bg-slate-200"></div>
+                                <div><label class="block text-base">DAP</label><input type="number" id="dap-price" value="0.90" class="w-full border border-indigo-300 py-1 px-2 dark:bg-slate-900 bg-slate-200"></div>
+                                <div><label class="block text-base">MOP</label><input type="number" id="mop-price" value="0.60" class="w-full border border-indigo-300 py-1 px-2 dark:bg-slate-900 bg-slate-200"></div>
+                                <div><label class="block text-base">Currency</label><input type="text" id="currency-symbol" value="$" class="w-full border border-indigo-300 py-1 px-2 dark:bg-slate-900 bg-slate-200"></div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                        <button id="calculate-btn" type="button" class="w-full sm:w-auto flex-grow text-white bg-indigo-600 hover:bg-indigo-700 font-semibold rounded-lg text-xl px-5 py-3 transition-all dark:bg-indigo-500 dark:hover:bg-indigo-600">
+                            Calculate Plan
+                        </button>
+                        <button id="reset-btn" type="button" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-800 font-semibold rounded-lg text-xl px-5 py-3 transition-colors dark:bg-slate-600 dark:hover:bg-slate-500 dark:text-slate-200">
+                            Reset
+                        </button>
+                    </div>
+
+                    <!-- Output Area -->
+                    <div id="results-section" class="hidden animate-fade-in mt-10 scroll-mt-16">
+                        <div class="text-slate-900 dark:text-white p-6 rounded-t-2xl">
+                            <h2 class="text-2xl font-bold flex items-center gap-2">
+                                📊 Recommendation Report
+                            </h2>
+                            <p id="basis-alert" class="text-indigo-500 text-base mt-1"></p>
+                        </div>
+                        <div class="border border-indigo-300 p-6 rounded-xl">
+                            <!-- 1. Balance Table -->
+                            <div class="mb-8">
+                                <h3 class="text-xl font-bold text-slate-700 border-b border-indigo-300 pb-2 mb-4">1. Nutrient Balance</h3>
+                                <div class="overflow-x-auto rounded-lg border border-indigo-300">
+                                    <table class="w-full text-base text-left">
+                                        <thead class="bg-slate-200 text-slate-900 font-bold dark:bg-slate-700 dark:text-white text-base">
+                                            <tr>
+                                                <th class="p-3">Nutrient</th>
+                                                <th class="p-3">Calculated Target (kg/ha)</th>
+                                                <th class="p-3">Actual Supplied</th>
+                                                <th class="p-3">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="balance-tbody" class="divide-y divide-slate-100 dark:divide-slate-600 dark:text-white text-base font-medium"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- 2. Application Table -->
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-700 border-b border-indigo-300 pb-2 mb-4">2. Fertilizer Schedule</h3>
+                                <div class="overflow-x-auto rounded-lg border border-indigo-300">
+                                    <table class="w-full text-base text-left">
+                                        <thead class="bg-slate-200 text-slate-900 font-bold dark:bg-slate-700 dark:text-white text-base">
+                                            <tr>
+                                                <th class="p-3">Fertilizer Product</th>
+                                                <th class="p-3">1st Application<br><span class="text-xs font-normal lowercase">(Basal)</span></th>
+                                                <th class="p-3">2nd Application<br><span class="text-xs font-normal lowercase">(Top Dress)</span></th>
+                                                <th class="p-3">Total Rate / Unit</th>
+                                                <th class="p-3">Total Quantity</th>
+                                                <th class="p-3">Cost Estimate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="schedule-tbody" class="divide-y divide-slate-100 dark:divide-slate-600 dark:text-white text-base font-medium"></tbody>
+                                        <tfoot class="bg-slate-200 font-bold dark:bg-slate-700 dark:text-white">
+                                            <tr>
+                                                <td colspan="5" class="p-4 text-right">TOTAL ESTIMATED COST</td>
+                                                <td class="p-4 text-indigo-600 text-lg dark:text-emerald-100" id="total-cost-display"></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+                <!-- SEO & CONTENT TEXT AREA -->
+                <div class="mx-auto text-slate-800 dark:text-slate-200 text-center mt-8">
+
+                  <section class="mb-8">
+                    <h2 class="text-3xl font-bold mb-6">Top Fertilizer Calculator & Blending Tool</h2>
+                    <p class="text-lg font-medium">
+                      Welcome to the internet's best, fastest, and lifetime free <strong>Fertilizer Calculator</strong>. 
+                      Whether you need to calculate fertilizer rates for a large farm or use a <strong>yard fertilizer calculator</strong> for your home lawn, 
+                      our tool handles it all. Your information is 100% confidential and secure because all processing happens right here in your browser.
+                    </p>
+                    <p class="mt-4">
+                       We help you handle complex blending fertilizer calculations, convert between kg/ha and lbs/acre, and even plan 
+                       liquid fertilizer applications for maximum spring fertility.
+                    </p>
+                    <p class="mt-4">
+                       *fertility calculator clear blue* *how do you calculate the total fertility rate* *how to calculate total fertility rate tfr​* *how do you calculate total fertility rate* *calculadora de fertilidad según edad*
+                    </p>
+                  </section>
+
+                <div class="my-4">
+                  <div id="midad-1" aria-label="Mid Ad 1"></div>
+                </div>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Why this is the Best Fertilizer Calculator</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 text-left">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Precise NPK Planning</h4>
+                        <p>Input your soil test results and get exact rates for Urea, DAP, MOP, or custom blends.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Liquid Fertilizer Calculator</h4>
+                        <p>Easily adapt the custom blend settings to work with liquid formulations by entering the percentage weight/volume.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Global Reach (Español)</h4>
+                        <p>Known globally as a <em>calculadora de fertilidad</em> or <em>días fértiles calculadora</em> for crops, we support diverse agricultural needs.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Cost & Budgeting</h4>
+                        <p>Calculate dias fertiles and immediately see the total cost for your specific field size.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Soil Adjustments</h4>
+                        <p>Our logic adjusts for sandy, clay, and loamy soils to ensure optimal <em>total fertility rate</em> efficiency.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Private & Secure</h4>
+                        <p>No data uploads. Your farm data stays on your device.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-2" aria-label="Mid Ad 2"></div>
+                  </div>
+
+                  <section class="mb-10">
+                    <h3 class="text-2xl font-semibold mb-4">Advanced Features: Blending & DIY</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                        <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                            <h4 class="text-xl font-bold mb-2">Calculating Fertilizer Blends</h4>
+                            <p>If you buy pre-mixed sacks or liquid fertilizers, standard calculators often fail. Use our <strong>Fertilizer Blend Calculator</strong> mode by checking "Use Custom NPK Blend." Enter the N-P-K values from your bag (e.g., 10-10-10 or 19-19-19), and we will tell you exactly how much product is needed to meet your soil's specific nutrient requirement.</p>
+                        </div>
+                        <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                            <h4 class="text-xl font-bold mb-2">DIY Lawn Care & DEF</h4>
+                            <p>A popular DIY trend is using Diesel Exhaust Fluid (DEF) as a nitrogen source. We are often asked: <em>"How to mix DEF for lawn fertilizer calculator?"</em> or <em>"How much DEF per gallon of water?"</em>. Since DEF is roughly 32.5% Urea (Nitrogen) and water, you can calculate it as a liquid fertilizer. (See FAQ below for mixing details).</p>
+                        </div>
+                    </div>
+                  </section>
+
+                  <section class="mb-10 text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">Global & Multilingual Utility</h3>
+                    <p class="text-lg mb-4">
+                      Our tool serves farmers and gardeners across the globe, from the USA and UK to India, Australia, and Latin America. We understand that terminology varies:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>English:</strong> Fertilizer calculator, NPK calculator, Spring fertility calculator.</li>
+                        <li><strong>Español:</strong> Users looking for <em>calculadora de dias fertiles</em>, <em>periodo fertil calculadora</em>, or <em>calcular periodo fertil</em> in an agricultural context will find our tool adapts to their nutrient planning needs.</li>
+                        <li><strong>Scientific:</strong> We handle conversions for elemental P vs P₂O₅ and K vs K₂O automatically.</li>
+                    </ul>
+                  </section>
+
+                  <div class="my-4">
+                    <div id="midad-3" aria-label="Mid Ad 3"></div>
+                  </div>
+
+                  <!-- EXPANDED FAQ SECTION FOR AEO -->
+                  <section class="mb-10 text-left">
+                    <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it private and secure?</h4>
+                        <p>Yes. Everything runs locally in your browser. Your data never leaves your device, making it 100% confidential.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">How to mix DEF for lawn fertilizer?</h4>
+                        <p>DEF (Diesel Exhaust Fluid) is ~32% Nitrogen. To use it safely on a lawn, a common ratio is <strong>1 part DEF to 9 parts water</strong> (how much def per gallon of water for fertilizer calculator). Always test a small area first to avoid burning the grass.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Can I calculate liquid fertilizer rates?</h4>
+                        <p>Yes. Use the "Custom Blend" feature. Enter the N-P-K analysis of your liquid fertilizer calculator product, and the tool will tell you the quantity needed.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is this useful for 'Spring Fertility'?</h4>
+                        <p>Absolutely. Spring is the critical time for nitrogen application. Use our "Spring Fertility Calculator" features to split your nitrogen application between planting and top-dressing.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Elemental P vs P₂O₅? K vs K₂O?</h4>
+                        <p>Targets are usually elemental P and K. The tool converts to P₂O₅ (×2.291) and K₂O (×1.205) for fertilizer sources automatically.</p>
+                      </div>
+                      <div class="bg-slate-100 p-4 dark:bg-slate-800 rounded-lg">
+                        <h4 class="text-lg font-semibold mb-2">Is it really free?</h4>
+                        <p>Yes, it is lifetime free and unlimited with no signups or paywalls.</p>
+                      </div>
+                    </div>
+                  </section>
+
+                </div>
+            </div>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-0"></div>
+              <div id="sidead-0"></div>
+              <div id="sidead-1" aria-label="Sidebar Ad 1"></div>
+              <div id="sidead-3" aria-label="Sidebar Ad 3"></div>
+              <div id="sidead-5" aria-label="Sidebar Ad 5"></div>
+            </aside>
+
+            <aside class="hidden lg:flex flex-col">
+              <div id="sidead-0"></div>
+              <div id="sidead-0"></div>
+              <div id="sidead-2" aria-label="Sidebar Ad 2"></div>
+              <div id="sidead-4" aria-label="Sidebar Ad 4"></div>
+              <div id="sidead-6" aria-label="Sidebar Ad 6"></div>
+            </aside>
+        </div>
+
+        <div class="mb-4">
+          <div id="topad-2" aria-label="Top Ad 2"></div>
+        </div>
+
+    </div>
+</main>
+
+<!-- :: Footer PLACEHOLDER :: -->
+<div id="footer-placeholder"></div>
+
+<script src="/assets/fertilizer.js" defer></script>
+<script src="/assets/ads/banner.js" defer></script>
+<script src="/assets/ads/in-pageh.js" defer></script>
+<script src="/assets/ads/in-pagem.js" defer></script>
+<script src="/assets/ads/video.js" defer></script>
+
+</body>
+</html>
